@@ -11,8 +11,8 @@ def main():
         print(competition)
         print(f"Registration fees: {registration_fees}")
         print(f"Refunds: {refunds}")
-        print(f"Stripe fees: {stripe_fees}\n")
-        print(f"Total income: {registration_fees - refunds - stripe_fees}")
+        print(f"Stripe fees: {stripe_fees}")
+        print(f"Total income: {registration_fees - refunds - stripe_fees}\n")
 
 def sum_registration_fees(stripe_data, competition_name: str) -> float:
     filtered_data = stripe_data[stripe_data["competition (metadata)"] == competition_name]
